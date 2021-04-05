@@ -11,14 +11,14 @@
   </header>
   <main class="main">
     <section class="add">
-      <label class="add__new-task" for="new-task">Add Item</label>
+      <label class="section-title" for="new-task">Add Item</label>
       <div class="add__task-wrapper">
         <input class="add__input-task task" id="new-task" type="text">
         <button class="add__btn">Add</button>
       </div>
     </section>
     <section class="todo">
-      <h3>Todo</h3>
+      <h3 class="section-title">Todo</h3>
       <ul class="incomplete-tasks" id="incomplete-tasks">
         <li class="incomplete-tasks__item">
           <input type="checkbox">
@@ -30,14 +30,14 @@
         <li class="incomplete-tasks__item edit-mode">
           <input type="checkbox">
           <label class="incomplete-tasks__message task">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task">
+          <input class="incomplete-tasks__new-message task" type="text" value="Go Shopping">
           <button class="edit">Save</button>
           <button class="delete"><img src="./remove.svg" alt="remove-btn"></button>
         </li>
       </ul>
     </section>
     <section class="completed">
-      <h3>Completed</h3>
+      <h3 class="section-title">Completed</h3>
       <ul class="completed-tasks" id="completed-tasks">
         <li class="completed-tasks__item">
           <input type="checkbox" checked>
