@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+  <title>Todo App</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+</head>
+<body>
+  <header class="header">
+    <img class="header__img" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix">
+    <a class="header__more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  </header>
+  <main class="main">
+    <section class="add">
+      <label class="section-title" for="new-task">Add Item</label>
+      <div class="add__task-wrapper">
+        <input class="add__input-task task" id="new-task" type="text">
+        <button class="add__btn">Add</button>
+      </div>
+    </section>
+    <section class="todo">
+      <h3 class="section-title">Todo</h3>
+      <ul class="incomplete-tasks" id="incomplete-tasks">
+        <li class="incomplete-tasks__item">
+          <input type="checkbox">
+          <label class="incomplete-tasks__message task">Pay Bills</label>
+          <input class="incomplete-tasks__new-message task" type="text">
+          <button class="edit">Edit</button>
+          <button class="delete"><img src="./remove.svg" alt="remove-btn"></button>
+        </li>
+        <li class="incomplete-tasks__item edit-mode">
+          <input type="checkbox">
+          <label class="incomplete-tasks__message task">Go Shopping</label>
+          <input class="incomplete-tasks__new-message task" type="text" value="Go Shopping">
+          <button class="edit">Save</button>
+          <button class="delete"><img src="./remove.svg" alt="remove-btn"></button>
+        </li>
+      </ul>
+    </section>
+    <section class="completed">
+      <h3 class="section-title">Completed</h3>
+      <ul class="completed-tasks" id="completed-tasks">
+        <li class="completed-tasks__item">
+          <input type="checkbox" checked>
+          <label class="completed-tasks__message task">See the Doctor</label>
+          <input class="completed-tasks__new-message task" type="text">
+          <button class="edit">Edit</button>
+          <button class="delete"><img src="./remove.svg" alt="remove-btn"></button>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
